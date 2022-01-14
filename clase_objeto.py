@@ -3,6 +3,7 @@ def run():
         marca = str
         modelo = int
         marca = 2012
+        tipo = str
 
     taxi = Auto()
     print(taxi.modelo)
