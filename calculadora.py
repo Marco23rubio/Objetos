@@ -1,25 +1,25 @@
 import math
-from socket import NI_NUMERICHOST
 
 class Calculadora:
     def __init__(self,numero) -> None:
-        self.n = numero
-        self.datos = [0 for i in range(numero)]
+        self.numero = numero
+        #self.datos = [5 for i in range(self.numero)]
+        #self.datos = 0
 
     def IngresarDato(self):
-        self.datos = [int(input("Ingresar datos " +str(i+1)+" = "))for i in range(self.n)]
+        self.numero = [int(input("Ingresar datos " +str(i+1)+" = "))for i in range(self.numero)]
 
 class Op_basicas(Calculadora):
     def __init__(self) -> None:
-        Calculadora.__init__(self,2)
+        Calculadora.__init__(self,3)
 
     def Suma (self):
-        a,b, = self.datos
+        a,b, = self.numero
         s = a+b 
         print("El resultado es: ",s)
     
     def Resta (self):
-        a,b, = self.datos
+        a,b, = self.numero
         r = a-b 
         print("El resultado es: ",r)
 
@@ -28,11 +28,10 @@ class Raiz(Calculadora):
         Calculadora.__init__(self,1)
 
     def cuadrada(self):
-        a, = self.datos
+        a, = self.numero
         print("El resultado es: ",math.sqrt(a))
 
 ejemplo = Op_basicas()
 print(ejemplo.IngresarDato())
 print(ejemplo.Suma())
 
-# Escribo esto como prueba de que estoy en experimento
