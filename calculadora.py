@@ -31,6 +31,6 @@ class Raiz(Calculadora):
         a, = self.datos
         print("El resultado es: ",math.sqrt(a))
 
-ejemplo = Op_basicas()
-print(ejemplo.IngresarDato())
-print(ejemplo.Suma())
+objeto = Op_basicas()
+print(isinstance(objeto,Raiz))
+print(issubclass(Op_basicas,Calculadora))
