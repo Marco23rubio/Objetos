@@ -18,4 +18,4 @@ nuevo_tomate = Tomate()
 funcion(nuevo_tomate)
 
 nueva_manzana = Manzana()
-funcion(nueva_manzana.tipo)
+funcion(nueva_manzana)
